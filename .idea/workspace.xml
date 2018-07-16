@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf3e1b-da4f-403d-97b4-3ef1e8366500" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geturl/bookjson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geturl/booklist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geturl/bookmysql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geturl/localurl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/booklist.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/books/635.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lessons.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixphp/bin/mix-crontab" beforeDir="false" afterPath="$PROJECT_DIR$/mixphp/bin/mix-crontab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixphp/bin/mix-daemon" beforeDir="false" afterPath="$PROJECT_DIR$/mixphp/bin/mix-daemon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixphp/bin/mix-httpd" beforeDir="false" afterPath="$PROJECT_DIR$/mixphp/bin/mix-httpd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mixphp/bin/mix-websocketd" beforeDir="false" afterPath="$PROJECT_DIR$/mixphp/bin/mix-websocketd" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,29 +18,27 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tiantainlexue$bookmysql.coverage" NAME="bookmysql Coverage Results" MODIFIED="1531647388441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tiantainlexue$localurl.coverage" NAME="localurl Coverage Results" MODIFIED="1531654216594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tiantainlexue$media.coverage" NAME="media Coverage Results" MODIFIED="1531755380493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bookmysql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bookmysql.py">
+      <file leaf-file-name="media.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+            <state relative-caret-position="209">
+              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localurl.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/localurl.py">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -59,6 +53,8 @@
       <list>
         <option value="$PROJECT_DIR$/bookmysql.py" />
         <option value="$PROJECT_DIR$/localurl.py" />
+        <option value="$PROJECT_DIR$/ttlxspider/ttlxspider/items.py" />
+        <option value="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py" />
       </list>
     </option>
   </component>
@@ -83,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,10 +86,29 @@
               <item name="tiantainlexue" type="b2602c69:ProjectViewProjectNode" />
               <item name="tiantainlexue" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tiantainlexue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiantainlexue" type="462c0819:PsiDirectoryNode" />
+              <item name="ttlxspider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiantainlexue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiantainlexue" type="462c0819:PsiDirectoryNode" />
+              <item name="ttlxspider" type="462c0819:PsiDirectoryNode" />
+              <item name="ttlxspider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiantainlexue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiantainlexue" type="462c0819:PsiDirectoryNode" />
+              <item name="ttlxspider" type="462c0819:PsiDirectoryNode" />
+              <item name="ttlxspider" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -114,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.localurl">
+  <component name="RunManager" selected="Python.media">
     <configuration name="bookmysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiantainlexue" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,12 +167,33 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="media" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tiantainlexue" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.bookmysql" />
       <item itemvalue="Python.localurl" />
+      <item itemvalue="Python.media" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.media" />
         <item itemvalue="Python.localurl" />
         <item itemvalue="Python.bookmysql" />
       </list>
@@ -178,7 +213,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1215" height="804" extended-state="6" />
+    <frame x="64" y="-11" width="1217" height="812" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -190,7 +225,6 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -199,8 +233,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +245,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bookmysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localurl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookmysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2983">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localurl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bookmysql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -226,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bookmysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        <state relative-caret-position="2926">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -240,6 +315,23 @@
           <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
