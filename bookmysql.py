@@ -76,14 +76,15 @@ def getlesson(dbconn, bookid, type):
 
 
 def writelesson(lessonid, type):
-    json_dir = os.path.join(os.path.dirname(os.getcwd()), 'json')
+    json_dir = os.path.join(os.getcwd(), 'json')
+    print(json_dir)
     with open(os.path.join(json_dir, 'lessons.txt'), 'a+') as f:
         f.writelines("%d,%d\n" % (lessonid, type))
         print("%dok" % lessonid)
 
 
 def gettopicandquestion():
-    json_dir = os.path.join(os.path.dirname(os.getcwd()), 'json')
+    json_dir = os.path.join(os.getcwd(), 'json')
     with open(os.path.join(json_dir, 'lessons.txt'), 'r') as f:
         lines = f.readlines()
         for line in lines:
@@ -150,5 +151,7 @@ def gettopicandquestion():
             except:
                 print(q.url)
 
+
+# getbooksjson()
 
 gettopicandquestion()

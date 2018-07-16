@@ -1,5 +1,6 @@
 import pymysql
-
+from threading import Thread
+from multiprocessing import Process
 
 
 def dbconnection():
@@ -25,7 +26,7 @@ def booksurl():
             cursor.execute(sql)
             cursor.execute(sqll)
             dbconn.commit()
-            print(sql,sqll)
+            print("okbooks")
         except:
             print("error")
     dbconn.close()
@@ -47,7 +48,7 @@ def lessonsurl():
                 sql ="insert into urls(url) values ('%s')"%imgPortraitUrl
                 cursor.execute(sql)
             dbconn.commit()
-            print("ok")
+            print("oklessons")
         except:
             print("error")
 
@@ -64,7 +65,7 @@ def questionsurl():
                 sql = "insert into urls (url) values ('%s')"%audioUrl
                 cursor.execute(sql)
                 dbconn.commit()
-                print("ok")
+                print("okquestions")
             except:
                 print("error")
 
@@ -82,7 +83,7 @@ def topicsurl():
                 sql = "insert into urls (url) values ('%s')"%imgurl
                 cursor.execute(sql)
                 dbconn.commit()
-                print("ok")
+                print("oktopic")
             except:
                 print("error")
 
@@ -91,9 +92,24 @@ def topicsurl():
                 sql = "insert into urls (url) values ('%s')"%mediaUrl
                 cursor.execute(sql)
                 dbconn.commit()
-                print("ok")
+                print("oktopic")
             except:
                 print("error")
 
 
-topicsurl()
+
+#booksurl()
+#lessonsurl()
+
+
+# questionsurl()
+# topicsurl()
+t3 = Process(target=booksurl)
+t4 = Process(target=lessonsurl)
+t1 = Process(target=questionsurl)
+t2 = Process(target=topicsurl)
+
+t3.start()
+t4.start()
+t1.start()
+t2.start()
