@@ -17,6 +17,7 @@ class MediaSpider(scrapy.Spider):
 
         weburl = "http://127.0.0.1:9501%s"
         next_url = response.xpath('//a[contains(text(),"下一页")]/@href').extract_first()
-        next_url = weburl % next_url
-        print(next_url)
-        yield scrapy.Request(next_url, callback=self.parse)
+        if next_url is not None:
+            next_url = weburl % next_url
+            print(next_url)
+            yield scrapy.Request(next_url, callback=self.parse)
