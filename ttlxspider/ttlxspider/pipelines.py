@@ -9,7 +9,7 @@ import requests
 import os
 import random
 import time
-
+from contextlib import closing
 
 class TtlxspiderPipeline(object):
     USER_AGENTS = [
@@ -37,12 +37,11 @@ class TtlxspiderPipeline(object):
             filename = mediaurl.split('/')[-1]
             ua = random.choice(self.USER_AGENTS)
             header = {'user-agent': ua}
-            r = requests.get(mediaurl, stream=True, headers=header)
             path = os.getcwd()
             mediapath = os.path.join(os.path.dirname(path), "medias")
-            with open(os.path.join(mediapath, filename), 'wb') as f:
-                for chunk in r.iter_content(chunk_size=512):
-                    if chunk:
-                        f.write(chunk)
-            time.sleep(0.3)
+            with closing(requests.get(mediaurl, stream=True, headers=header)) as r:
+                with open(os.path.join(mediapath, filename), 'wb') as f:
+                    for chunk in r.iter_content(chunk_size=512):
+                        if chunk:
+                            f.write(chunk)
         return item

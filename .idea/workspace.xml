@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf3e1b-da4f-403d-97b4-3ef1e8366500" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tiantainlexue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tiantainlexue.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medias/img_M2M3ZDVlNDMtODBmZS00ODRiLWI5NDEtYjVmMmY1MmY4N2Fk.png" beforeDir="false" afterPath="$PROJECT_DIR$/medias/img_M2M3ZDVlNDMtODBmZS00ODRiLWI5NDEtYjVmMmY1MmY4N2Fk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medias/img_M2M4MTU4MDAtYWQyYy00MzIxLWFhNTEtYjA5NDA1OGM2Mjk2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medias/img_M2M4NTNlZTYtNjdiMy00ZDM1LWE0NTEtN2VjMTQ0OTU5ZTc1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ttlxspider/ttlxspider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttlxspider/ttlxspider/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ttlxspider/ttlxspider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttlxspider/ttlxspider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +25,7 @@
       <file leaf-file-name="media.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="396">
               <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
@@ -38,7 +37,7 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
+            <state relative-caret-position="198">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding>
                 <element signature="e#194#209#0" expanded="true" />
               </folding>
@@ -79,7 +78,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="1496">
               <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
             </state>
           </provider>
@@ -301,6 +300,63 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bookjson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booklist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="e#194#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
@@ -369,9 +425,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media2.py" />
     <entry file="file:///usr/local/python3/lib/python3.6/site-packages/scrapy/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -384,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="1496">
           <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
         </state>
       </provider>
@@ -414,7 +468,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/spiders/media.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="396">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
@@ -424,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
+        <state relative-caret-position="198">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
@@ -432,7 +486,7 @@
     <entry file="file://$PROJECT_DIR$/ttlxspider/ttlxspider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding>
             <element signature="e#194#209#0" expanded="true" />
           </folding>
