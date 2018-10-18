@@ -6,25 +6,6 @@ import logging
 import time
 
 
-def initlogger(type, content):
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)  # Log等级总开关
-    # 第二步，创建一个handler，用于写入日志文件
-    rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-    log_path = os.path.dirname(os.getcwd()) + '/'
-    log_name = log_path + rq + '.log'
-    logfile = log_name
-    print(logfile)
-    fh = logging.FileHandler(logfile, mode='w')
-    fh.setLevel(logging.DEBUG)  # 输出到file的log等级的开关
-    # 第三步，定义handler的输出格式
-    formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
-    fh.setFormatter(formatter)
-    # 第四步，将logger添加到handler里面
-    logger.addHandler(fh)
-    return logger
-
-
 def dbconnection():
     host = "127.0.0.1"
     user = "root"
@@ -34,8 +15,8 @@ def dbconnection():
     return dbconn
 
 
-def getbooksjson():
-    booklisturl = "https://6tiantian.com/api/student/book/list/v2?pageNumber=1&customConfigId=custom_config_id_1&pageSize=188&token=b579c098611bac59cf72e05394f7e8b47c6c3914&tagId=1"
+def getbooksjson(iid):
+    booklisturl = "https://6tiantian.com/api/student/book/list/v2?pageNumber=1&customConfigId=custom_config_id_1&pageSize=188&token=b579c098611bac59cf72e05394f7e8b47c6c3914&tagId=%d" % iid
     r = requests.get(booklisturl)
     r_json = r.json()
     books = r_json['books']
@@ -50,7 +31,7 @@ def getbooksjson():
         info = dbconn.escape_string(info)
         brief = book['brief']
         # brief = dbconn.escape_string(brief)
-        tagid = 1
+        tagid = iid
         sql = "insert into books(bookid,type,coverUrl,coverLandscapeUrl,info,brief,tagid) values (%d,%d,'%s','%s','%s','%s',%d)" % (
             bookid, type, coverUrl, coverLandscapeUrl, info, brief, tagid)
         try:
@@ -182,30 +163,21 @@ def gettopicandquestion():
                             dbconn.commit()
                             print("      questionid %d保存成功" % questionid)
                         except:
-                            print(sql)
+                            json_dir = os.path.join(os.getcwd(), '/')
+                            with open(os.path.join(json_dir, 'sql.log'), 'a+') as f:
+                                f.writelines(lesson_url % (hwtype, lessonid))
+                                f.writelines("\n")
             except:
-                print("出现错误%s"%lesson_url)
-                logger = logging.getLogger()
-                logger.setLevel(logging.INFO)  # Log等级总开关
-                # 第二步，创建一个handler，用于写入日志文件
-                # rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-
-                log_path = os.path.dirname(os.getcwd()) + '/'
-                log_name = log_path + 'log.log'
-                logfile = log_name
-                print(logfile)
-                fh = logging.FileHandler(logfile, mode='w')
-                fh.setLevel(logging.DEBUG)  # 输出到file的log等级的开关
-                # 第三步，定义handler的输出格式
-                formatter = logging.Formatter(
-                    "%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
-                fh.setFormatter(formatter)
-                # 第四步，将logger添加到handler里面
-                logger.addHandler(fh)
-                logger.error(line)
-                logger.error("出现错误%s"%lesson_url)
+                json_dir = os.path.join(os.getcwd(), '/')
+                with open(os.path.join(json_dir, 'log.log'), 'a+') as f:
+                    f.writelines(lesson_url % (hwtype, lessonid))
+                    f.writelines("\n")
+                print("出现错误%s" % lesson_url)
 
 
-getbooksjson()
 
-# gettopicandquestion()
+# category = (1,2,3,4,230,2781)
+# for x in (category):
+#     getbooksjson(x)
+
+gettopicandquestion()
